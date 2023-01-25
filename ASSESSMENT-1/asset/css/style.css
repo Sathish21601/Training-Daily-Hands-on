@@ -1,0 +1,159 @@
+body {
+    margin: 0px;
+    font-size: 14px;
+}
+
+.content {
+    display: flex;
+}
+
+nav {
+    width: 250px;
+    padding: 10px;
+    background-color: #f7f7f7;
+}
+
+nav ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.page_info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.page_info .title_icon {
+    display: inline-block;
+    color: #ffffff;
+    background-color: yellow;
+    padding: 5px;
+}
+
+.page_info .title_icon i {
+    font-size: 32px;
+}
+
+.page_info .page_title {
+    padding-left: 10px;
+}
+
+.page_info .page_title .title {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+    color: blue;
+}
+
+.page_info .page_title .sub_title {
+    color: darkblue;
+    font-size: 16px;
+}
+
+.sub_heading {
+    padding: 15px 0px 5px;
+}
+
+.sub_heading span {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.sub_menu {
+    padding: 10px 5px;
+}
+
+.sub_menu i {
+    color: #7e7a7a;
+    padding-right: 5px;
+}
+
+.sub_menu:hover {
+    background-color: #eff0f7;
+}
+
+.sub_menu a {
+    display: block;
+    text-decoration: none;
+}
+
+.add_shortcut {
+    color: #7e7a7a;
+}
+
+.right_content_layout {
+    width: calc(100% - 250px);
+}
+
+.right_content_layout {
+    padding: 0px 10px;
+}
+
+.tbl table {
+    width: 100%;
+}
+
+.tbl table th {
+    text-align: left;
+}
+
+.tbl table tr,
+th,
+td {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tbl table span {
+    padding: 10px 0px;
+    color: blue;
+}
+
+.tbl table span i {
+    padding: 10px;
+    color: #000;
+}
+.circle {
+    list-style-type: none;
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        width: 40px;
+    }
+
+    .right_content_layout {
+        width: calc(100% - 40px);
+    }
+
+    .sub_heading span,
+    .page_title,
+    .sub_menu span {
+        display: none;
+    }
+
+    .sub_menu i {
+        padding-right: 0px;
+    }
+
+    .sub_menu {
+        padding: 10px 5px;
+        text-align: center;
+        font-size: 18px;
+        margin: 5px 0px;
+    }
+
+    li:nth-of-type(2) {
+        border-bottom: 0px;
+    }
+
+    .sub_heading {
+        border-bottom: 2px solid #ddd;
+        padding: 0px;
+        display: block;
+        margin: 10px 0px;
+    }
+}
