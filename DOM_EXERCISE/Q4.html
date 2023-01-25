@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM EXERCISE -4</title>
+    <style>
+      .numbers {
+        margin: 1em;
+      }
+      #num2 {
+        margin-left: 3em;
+      }
+      #num1 {
+        margin-left: 4.2em;
+      }
+      .button {
+        margin-left: 10em;
+      }
+      .message {
+        margin-left: 10em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-group">
+      <div class="numbers">
+        <label>First Number:</label>
+        <input type="number" id="num" name="num" />
+      </div>
+      <div class="numbers">
+        <label>Second number:</label>
+        <input type="number" id="num" name="num" />
+      </div>
+      <div class="numbers">
+        <label for="operations">Select the Operands:</label>
+        <select id="operations" name="operations">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+      </div>
+      <div class="numbers">
+        <button type="button" class="button">Submit</button>
+      </div>
+      <span class="message"></span>
+    </div>
+    <script>
+      const formGroup = document.querySelector(".form-group");
+      const num1 = document.querySelector("#num1");
+      const num2 = document.querySelector("#num2");
+      const button = document.querySelector(".button");
+      const message = document.querySelector(".message");
+      const choice = document.querySelector("#operations");
+
+      function onClickBtn(event) {
+        let num11 = parseInt(num1.value);
+        let num22 = parseInt(num2.value);
+        let choice1 = choice.value;
+        let total;
+
+        if (choice1 === "+") {
+          total = num11 + num22;
+        } else if (choice1 === "-") {
+          total = num11 - num22;
+        } else if (choice1 === "*") {
+          total = num11 * num22;
+        } else if (choice1 === "/") {
+          total = num11 / num22;
+        } else {
+          total = 0;
+        }
+        message.textContent = `${total}`;
+      }
+      button.addEventListener("click", onClickBtn);
+    </script>
+  </body>
+</html>

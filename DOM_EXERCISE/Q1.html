@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM EXERCISE -1</title>
+    <style>
+      .para-third {
+        background-color: crimson;
+        color: white;
+      }
+      .para-last {
+        border: 2px solid black;
+        padding: 0.5em;
+        color: olive;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sapient" id="sapient-0"></div>
+    <div class="sapient" id="sapient-1">
+      <p>
+        Publicis Sapient is an American digital consulting company, founded as
+        Sapient in Cambridge, Massachusetts in 1990 by Jerry Greenberg and J.
+        Stuart Moore.
+      </p>
+    </div>
+    <div class="sapient" id="sapient-2">
+      <p class="para-third">
+        November 17, 2016, Publicis Sapient announced SapientNitro was merging
+        with sister agency Razorfish to form SapientRazorfish, which would be
+        led by former SapientNitro CEO Alan Wexler.
+      </p>
+    </div>
+    <div class="sapient" id="sapient-3">
+      <p class="para-last">
+        At the time, Sapient consisted of both SapientRazorfish and Sapient
+        Consulting, and was co-led by Alan Wexler and Sapient Consulting CEO
+        Chip Register.
+      </p>
+    </div>
+    <div class="sapient" id="sapient-4"></div>
+  </body>
+  <script>
+    const sapient0 = document.querySelector("#sapient-0");
+    const sapient1 = document.querySelector("#sapient-1");
+    const sapient2 = document.querySelector("#sapient-2");
+    const sapient3 = document.querySelector("#sapient-3");
+    const sapient4 = document.querySelector("#sapient-4");
+    const para3 = document.querySelector(".para-third");
+    const para4 = document.querySelector(".para-last");
+
+    console.log(sapient1.textContent);
+
+    setTimeout(function () {
+      sapient0.innerHTML = `<p>  Publicis Sapient is an American digital consulting company, founded as
+        Sapient in Cambridge, Massachusetts in 1990 by Jerry Greenberg and J.
+        Stuart Moore.  <p`;
+    }, 3000);
+
+    setTimeout(function () {
+      sapient4.innerHTML = `<p>  November 17, 2016, Publicis Sapient announced SapientNitro was merging
+        with sister agency Razorfish to form SapientRazorfish, which would be
+        led by former SapientNitro CEO Alan Wexler. </p>`;
+    }, 4000);
+
+    console.log(sapient1.textContent);
+
+    setTimeout(function () {
+      sapient1.innerHTML = `<span>Hello Publicis Sapient</span>`;
+    }, 5000);
+
+    console.log(sapient1);
+
+    setTimeout(function () {
+      sapient1.setAttribute("id", "sapient-id");
+    }, 6000);
+
+    setTimeout(function () {
+      sapient1.setAttribute("data-attribute", "changed attribute");
+    }, 7000);
+
+    setTimeout(function () {
+      para3.classList.add("para-third");
+    }, 8000);
+    setTimeout(function () {
+      para4.classList.add("para-last");
+    }, 9000);
+  </script>
+</html>

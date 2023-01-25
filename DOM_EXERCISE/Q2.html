@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM EXERCISE- 2</title>
+    <style>
+      .modify {
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="para" id="#para">
+      Publicis Sapient is an American digital consulting company, founded as
+      Sapient in Cambridge, Massachusetts in 1990 by Jerry Greenberg and J.
+      Stuart Moore.
+    </p>
+    <form class="form-1">
+      <input type="text" id="text" class="text-input" />
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    <script>
+      const form = document.querySelector(".form-1");
+      const para = document.querySelector(".para");
+      const text = document.querySelector(".text-input");
+      const submit = document.querySelector(".btn");
+
+      para.addEventListener("click", function (event) {
+        alert("Hello Sapient!");
+      });
+
+      function validateUsername(event) {
+        if (text.value.length > 8) {
+          text.classList.add("modify");
+        } else {
+          text.classList.remove("modify");
+        }
+      }
+      text.addEventListener("keyup", validateUsername);
+
+      function onSubmit(event) {
+        if (text.value.length < 8) {
+          event.preventDefault();
+          alert("Form is not Submitted");
+        } else {
+          alert("Successfully Submitted the Form!");
+        }
+      }
+      submit.addEventListener("click", onSubmit);
+    </script>
+  </body>
+</html>
