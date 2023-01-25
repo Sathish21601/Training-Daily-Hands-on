@@ -1,0 +1,22 @@
+body {
+    margin: 0px;
+    font-size: 14px;
+}
+
+.bg_notdone {
+    background-color: #ff0000;
+}
+.bg_done {
+    background-color: #008000;
+}
+
+.btn-light {
+    border: 0px;
+}
+.btn-light:active, .btn-light:focus {   
+    background-color: #000000;  
+    color: #ffffff; 
+    border: 0px;
+    box-shadow:none;
+}
+
