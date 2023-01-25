@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfirebase_hosting=self.webpackChunkfirebase_hosting||[]).push([[562],{562:function(n,e,t){t.r(e),t.d(e,{default:function(){return r}});t(791);var i=t(184);function r(){return(0,i.jsx)("div",{children:"Contact"})}}}]);
+//# sourceMappingURL=562.c1856f2e.chunk.js.map
