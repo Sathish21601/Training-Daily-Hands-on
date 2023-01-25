@@ -1,0 +1,49 @@
+.bn {
+    border-radius: 0.3em;
+    background-color: navy;
+    color: white;
+    padding: 1em;
+    width: 85px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+  }
+  .ogig {
+    border-radius: 0.3em;
+    background-color: darkolivegreen;
+    color: white;
+    padding: 1em;
+    width: 87px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+  }
+  .dlt {
+    border-radius: 0.3em;
+    background-color: crimson;
+    color: white;
+    padding: 1em;
+  }
+  .gs {
+    border-radius: 0.3em;
+    background-color: darkblue;
+    color: white;
+    padding: 1em;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .bn:hover {
+    color: yellow;
+  }
+  .ogig:hover {
+    color: yellow;
+  }
+  .dlt:hover {
+    color: yellow;
+  }
+  .gs:hover {
+    color: yellow;
+  }

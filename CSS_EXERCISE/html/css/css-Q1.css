@@ -1,0 +1,30 @@
+nav {
+    background-color: darkblue;
+    margin: 4.5px;
+    padding: 17px;
+  }
+
+  a {
+    color: white;
+    margin: 0.5em;
+    font-style: red;
+    text-decoration: none;
+  }
+
+  img {
+    width: 20px;
+  }
+
+  .topnav a {
+    padding: 14px 16px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+  }
+
+  .topnav a:hover {
+    border-bottom: 3px solid red;
+  }
+
+  .topnav a.active {
+    border-bottom: 3px solid red;
+  }

@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+table {
+  margin: 20px auto;
+  width: 70%;
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+table,
+th,
+td {
+  border-color: navy;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+th,
+td {
+  padding: 1em;
+  font-size: 15px;
+}
+
+thead,
+th {
+  text-align: left;
+  font-weight: normal;
+  background-color: navy;
+  color: white;
+}
+body {
+  font-weight: bold;
+}

@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.col {
+  flex-basis: 90%;
+  margin: 0 5% 5% 5%;
+}
+pre {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.img-fluid1 {
+  width: 10%;
+}
+.img-fluid2 {
+  width: 20%;
+}
+
+@media (min-width: 480px) and (max-width: 720px) {
+  .col1 {
+    margin: 0;
+    flex-basis: 48%;
+  }
+}
+
+@media (min-width: 720px) {
+  .col2 {
+    margin: 0;
+    flex-basis: 22%;
+  }
+}

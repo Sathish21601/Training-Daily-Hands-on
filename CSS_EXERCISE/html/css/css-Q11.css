@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+.grid {
+    display: grid;
+    grid-template-rows: 50px auto auto 50px;
+    grid-template-columns: 1fr;
+}
+header {
+    background-color: lightpink;
+    color: crimson;
+    text-align: center;
+}
+footer {
+    background-color: lightgreen;
+    color: red;
+    text-align: center;
+}
+aside {
+    padding: 1em;
+    background-color: wheat;
+    color: black;
+}
+.home {
+    width: 46px;
+    height: 44px;
+    background: url(https://cdn5.vectorstock.com/i/1000x1000/14/04/home-icon-vector-20131404.jpg) 0 0;
+}
+.forward {
+    width: 43px;
+    height: 44px;
+    background: url(https://cdn5.vectorstock.com/i/1000x1000/14/04/home-icon-vector-20131404.jpg)-91px 0;
+}
+@media (min-width:400px) {
+    .grid {
+        grid-template-rows: 50px 1fr 50px;
+        grid-template-columns: 1fr 5fr;
+    }
+    header {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    footer {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+}
