@@ -1,0 +1,12 @@
+body {
+    background: gray;
+    
+    margin: 30px;
+}
+
+.heading {
+    background-color: white;
+    color: brown;
+    /* width: 300px; */
+    display: inline-block;
+}

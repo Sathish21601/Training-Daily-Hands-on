@@ -1,0 +1,6 @@
+.heading {
+    background-color: blue;
+    color: tomato;
+    /* width: 300px; */
+    display: inline-block;
+}
